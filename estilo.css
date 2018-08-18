@@ -1,15 +1,27 @@
+
+.padding{
+	width: 750px;
+	max-width: 100%;
+	padding: 100px 40px;
+	margin: 20px auto;
+	background:rgba(255, 255, 255, 0.5);
+	color: #000;
+}
+
 ul>li>a{
 	font-size: 20px;
-	color: blue;
+	color: #00008B;
 	font-weight: 700;
 }
 ul>li>a:hover{
-	background: r;
-	color: red;
+	background: center;
+	color: #7f0500;
 }
 #titulo{
 	font-size: 25px;
 	font-weight: 900;
-	color: black;
+	color: #ffffff;
 
 }
+
+

@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<title>Gaming</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="jogo.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+</head>
+
+<body>
+
+<!--NavBar-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-transparet">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Dropdown
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+	</nav>
+
+<!--Game-->
+	<div class="padding">
+        <div id="pagina_inicial" align="center">
+            <table border="0" width="600px">
+                <tbody>
+                <tr>
+                    <td colspan="3" align="center" id="titulo">JOGO DA VELHA</td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <img src="imagens/jogador_1.png">
+                        <br>
+                        <input id="entrada_apelido_jogador_1" type="text" maxlength="10" placeholder="Apelido Jogador 1" style="border: 0px">
+                    </td>
+                    <td align="center">
+                        <img id="btn_iniciar_jogo" src="imagens/iniciar.png" >
+                    </td>
+                    <td align="center">
+                        <img src="imagens/jogador_2.png" >
+                        <br>
+                        <input id="entrada_apelido_jogador_2" type="text" maxlength="10" placeholder="Apelido Jogador 2"  style="border: 0px">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="palco_jogo" style="display:none;margin-top: 50px; text-align: center;">
+            <div style="display:inline-block;">
+                <img src="imagens/jogador_1.png">
+                <br>
+                <span id="nome_jogador_1"></span>
+            </div>
+
+            <div style="display:inline-block;">
+                <table border="0"  >
+                    <tr>
+                        <td style="border-bottom: solid 1px black;">
+                            <div class="jogada" id="a-1" style="width: 100px;height: 100px;"></div>
+                        </td>
+                        <td style="border-bottom: solid 1px black;border-left: solid 1px black;">
+                            <div class="jogada" id="a-2" style="width: 100px;height: 100px;"></div>
+                        </td>
+                        <td style="border-bottom: solid 1px black;border-left: solid 1px black;">
+                            <div class="jogada" id="a-3" style="width: 100px;height: 100px;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: solid 1px black;">
+                            <div class="jogada" id="b-1" style="width: 100px;height: 100px;"></div>
+                        </td>
+                        <td style="border-bottom: solid 1px black;border-left: solid 1px black;">
+                            <div class="jogada" id="b-2" style="width: 100px;height: 100px;"></div>
+                        </td>
+                        <td style="border-bottom: solid 1px black;border-left: solid 1px black;">
+                            <div class="jogada" id="b-3" style="width: 100px;height: 100px;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="jogada" id="c-1" style="width: 100px;height: 100px;"></div>
+                        </td>
+                        <td style="border-left: solid 1px black;">
+                            <div class="jogada" id="c-2" style="width: 100px;height: 100px;"></div>
+                        </td>
+                        <td style="border-left: solid 1px black;">
+                            <div class="jogada" id="c-3" style="width: 100px;height: 100px;"></div>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div style="display:inline-block;">
+                <img src="imagens/jogador_2.png">
+                <br>
+                <span id="nome_jogador_2"></span>
+            </div>
+            <div>
+                <table  style="margin-top: 40px;"align="center">
+                    <tr>
+                        <td>
+                            <img src="imagens/retornar.png" id="revanche_jogo">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+	</div>
+
+<!--Footer-->
+    <div class="footer">
+        <p>© 2018 Copyhight<a href="https://sites.xfind.com.br/" >  X Find </a></p>
+    </div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
