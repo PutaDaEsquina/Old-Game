@@ -17,7 +17,7 @@
 </head>
 
 <body>
-
+<div class="container-fluid">
 <!--NavBar-->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-transparet">
 		<a class="navbar-brand" href="#">Navbar</a>
@@ -62,7 +62,7 @@
                     <td align="center">
                         <img src="imagens/jogador_1.png">
                         <br>
-                        <input id="entrada_apelido_jogador_1" type="text" maxlength="10" placeholder="Apelido Jogador 1" style="border: 0px">
+                        <input id="entrada_apelido_jogador_1" type="text" maxlength="10" placeholder="Apelido Jogador 1" class="teste">
                     </td>
                     <td align="center">
                         <img id="btn_iniciar_jogo" src="imagens/iniciar.png" >
@@ -70,7 +70,7 @@
                     <td align="center">
                         <img src="imagens/jogador_2.png" >
                         <br>
-                        <input id="entrada_apelido_jogador_2" type="text" maxlength="10" placeholder="Apelido Jogador 2"  style="border: 0px">
+                        <input id="entrada_apelido_jogador_2" type="text" maxlength="10" placeholder="Apelido Jogador 2"  class="teste">
                     </td>
                 </tr>
                 </tbody>
@@ -84,27 +84,27 @@
                 <span id="nome_jogador_1"></span>
             </div>
 
-            <div style="display:inline-block;">
+            <div  style="display:inline-block;">
                 <table border="0"  >
                     <tr>
-                        <td style="border-bottom: solid 1px black;">
+                        <td style="border-bottom: solid 8px rgba(0, 0, 0, 0.397)">
                             <div class="jogada" id="a-1" style="width: 100px;height: 100px;"></div>
                         </td>
-                        <td style="border-bottom: solid 1px black;border-left: solid 1px black;">
+                        <td style="border-bottom: solid 8px rgba(0, 0, 0, 0.397);border-left: solid 8px rgba(0, 0, 0, 0.397);">
                             <div class="jogada" id="a-2" style="width: 100px;height: 100px;"></div>
                         </td>
-                        <td style="border-bottom: solid 1px black;border-left: solid 1px black;">
+                        <td style="border-bottom: solid 8px rgba(0, 0, 0, 0.397);border-left: solid 8px rgba(0, 0, 0, 0.397);">
                             <div class="jogada" id="a-3" style="width: 100px;height: 100px;"></div>
                         </td>
                     </tr>
                     <tr>
-                        <td style="border-bottom: solid 1px black;">
+                        <td style="border-bottom: solid 8px rgba(0, 0, 0, 0.397); border-radius: 10px">
                             <div class="jogada" id="b-1" style="width: 100px;height: 100px;"></div>
                         </td>
-                        <td style="border-bottom: solid 1px black;border-left: solid 1px black;">
+                        <td style="border-bottom: solid 8px rgba(0, 0, 0, 0.397);border-left: solid 8px rgba(0, 0, 0, 0.397);">
                             <div class="jogada" id="b-2" style="width: 100px;height: 100px;"></div>
                         </td>
-                        <td style="border-bottom: solid 1px black;border-left: solid 1px black;">
+                        <td style="border-bottom: solid 8px rgba(0, 0, 0, 0.397);border-left: solid 8px rgba(0, 0, 0, 0.397);">
                             <div class="jogada" id="b-3" style="width: 100px;height: 100px;"></div>
                         </td>
                     </tr>
@@ -112,10 +112,10 @@
                         <td>
                             <div class="jogada" id="c-1" style="width: 100px;height: 100px;"></div>
                         </td>
-                        <td style="border-left: solid 1px black;">
+                        <td style="border-left: solid 8px rgba(0, 0, 0, 0.397);">
                             <div class="jogada" id="c-2" style="width: 100px;height: 100px;"></div>
                         </td>
-                        <td style="border-left: solid 1px black;">
+                        <td style="border-left: solid 8px rgba(0, 0, 0, 0.397);">
                             <div class="jogada" id="c-3" style="width: 100px;height: 100px;"></div>
                         </td>
                     </tr>
@@ -143,8 +143,9 @@
 
 <!--Footer-->
     <div class="footer">
-        <p>© 2018 Copyhight<a href="https://sites.xfind.com.br/" >  X Find </a></p>
+        <p>© 2018 Copyhight<a href="https://sites.xfind.com.br/" >  XFind </a></p>
     </div>
+</div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
